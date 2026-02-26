@@ -2,39 +2,56 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="container">
-      {/* 🐞 Flying Ladybugs */}
-      <div className="ladybug bug1">🐞</div>
-      <div className="ladybug bug2">🐞</div>
-      <div className="ladybug bug3">🐞</div>
+    <>
+      {/* 🌸 Top Elegant Navbar */}
+      <nav className="top-navbar">
+        <div className="nav-logo">Shreya</div>
 
-      {/* HERO SECTION */}
-      <section className="hero">
-        <h1>Hi, I'm Shreya 👋</h1>
-        <h2 className="typing">QA Automation Engineer</h2>
-        <p>QA + Automation + Manual + Data Validation</p>
-
-        <div className="buttons">
-          <a
-            href="https://www.linkedin.com/in/shreya-kashyap-681558248"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button>LinkedIn</button>
-          </a>
-
-          <a href="/resume.pdf" download>
-            <button>Download Resume</button>
-          </a>
-
-          <a href="mailto:shreyakashyap475@gmail.com">
-            <button>Email Me</button>
-          </a>
+        <div className="nav-links">
+          <a href="#summary">Summary</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
         </div>
-      </section>
+      </nav>
 
+      {/* Main Page Content */}
+      <div className="container">
+        {/* 🐞 Flying Ladybugs */}
+        <div className="ladybug bug1">🐞</div>
+        <div className="ladybug bug2">🐞</div>
+        <div className="ladybug bug3">🐞</div>
+      {/* HERO SECTION */}
+<section className="hero">
+  <div className="avatar">👩‍💻</div>
+
+  <h1>
+    Hi, I'm <span className="name">Shreya</span> 👋
+  </h1>
+
+  <h2 className="typing">QA Automation Engineer</h2>
+
+  <p className="subtitle">
+    QA · Automation · Manual · Data Validation
+  </p>
+
+  <div className="buttons">
+    <a href="https://www.linkedin.com/in/shreya-kashyap-681558248" target="_blank" rel="noreferrer">
+      <button className="btn primary">LinkedIn</button>
+    </a>
+
+    <a href="/resume.pdf" download>
+      <button className="btn secondary">Download Resume</button>
+    </a>
+
+    <a href="mailto:shreyakashyap475@gmail.com">
+      <button className="btn secondary">Email Me</button>
+    </a>
+  </div>
+</section>
       {/* SUMMARY */}
-      <section>
+      <section id="summary">
         <h2>🧾 Summary</h2>
         <div className="card">
           <p>
@@ -64,7 +81,7 @@ function App() {
       </section>
 
       {/* TECHNICAL SKILLS */}
-      <section>
+      <section id="skills">
         <h2>🛠️ Technical Skills</h2>
         <div className="grid">
           <div className="card"><b>Languages:</b><br/>Java, Python</div>
@@ -77,7 +94,7 @@ function App() {
       </section>
 
       {/* EDUCATION */}
-      <section>
+      <section id="education">
         <h2>🎓 Professional Qualifications</h2>
         <div className="grid">
           <div className="card">
@@ -96,7 +113,7 @@ function App() {
       </section>
 
       {/* PROJECT EXPERIENCE */}
-      <section>
+      <section id="projects">
         <h2>🚀 Project Experience</h2>
         <div className="grid">
 
@@ -162,12 +179,13 @@ function App() {
       </section>
 
       {/* CONTACT */}
-      <section className="contact">
+      <section id="contact" className="contact">
         <h2>📫 Contact Me</h2>
         <p>📞 +91 9981155633</p>
         <p>📧 shreyakashyap475@gmail.com</p>
       </section>
     </div>
+    </>
   );
 }
 
