@@ -1,83 +1,81 @@
+import "./App.css";
+
 function App() {
   return (
-    <div style={{ padding: "40px", fontFamily: "Arial", lineHeight: "1.6" }}>
-      <h1>Hi, I'm Shreya 👋</h1>
-      <h2>QA Automation Engineer</h2>
-      <p>Python | Playwright | Appium | Selenium | Automation Testing</p>
+    <div className="container">
+      {/* HERO SECTION */}
+      <section className="hero">
+        <h1>Hi, I'm Shreya 👋</h1>
+        <h2>QA Automation Engineer</h2>
+        <p>Python | Playwright | Appium | Selenium | Automation Testing</p>
 
-      <hr style={{ margin: "40px 0" }} />
+        <div className="buttons">
+          <a href="https://www.linkedin.com/in/shreya-kashyap-681558248" target="_blank" rel="noreferrer">
+            <button>LinkedIn</button>
+          </a>
+          <a href="mailto:shreyakashyap475@gmail.com">
+            <button>Email Me</button>
+          </a>
+        </div>
+      </section>
 
-      <h2>🛠️ Technical Skills</h2>
-      <p><b>Languages:</b> Java, Python</p>
-      <p><b>Frameworks:</b> TestNG, Playwright, PyTest</p>
-      <p><b>Web Services:</b> Postman, Appium</p>
-      <p><b>Automation Stack:</b> Selenium, Playwright, Appium, POM, Maven, Jira</p>
-      <p><b>IDEs:</b> Eclipse, IntelliJ, VS Code</p>
-      <p><b>Operating Systems:</b> Windows, MacOS, Android, iOS</p>
-      <p><b>Domains:</b> E-Commerce, CRM, Education, Gaming, Healthcare, Fleet Management</p>
+      {/* SKILLS */}
+      <section>
+        <h2>🛠️ Technical Skills</h2>
+        <div className="grid">
+          <div className="card"><b>Languages:</b><br/> Java, Python</div>
+          <div className="card"><b>Frameworks:</b><br/> TestNG, Playwright, PyTest</div>
+          <div className="card"><b>Automation:</b><br/> Selenium, Playwright, Appium, POM</div>
+          <div className="card"><b>Tools:</b><br/> Postman, Maven, Jira</div>
+          <div className="card"><b>IDEs:</b><br/> Eclipse, IntelliJ, VS Code</div>
+          <div className="card"><b>OS:</b><br/> Windows, MacOS, Android, iOS</div>
+        </div>
+      </section>
 
-      <hr style={{ margin: "40px 0" }} />
+      {/* PROJECTS */}
+      <section>
+        <h2>🚀 Project Experience</h2>
+        <div className="grid">
 
-      <h2>🚀 Project Experience</h2>
+          <div className="card">
+            <h3>Medipilot 360</h3>
+            <p>Automation testing for clinic workflows using Playwright & Selenium.</p>
+          </div>
 
-      <h3>🔹 Medipilot 360 (Healthcare / Clinic Management)</h3>
-      <p>
-        Android-based clinic management solution with Doctor & Receptionist apps.
-        Performed end-to-end testing for appointment booking, patient management,
-        prescription generation, and dashboard workflows. Executed regression
-        and automation testing using Python Playwright and Selenium to ensure
-        stability of new releases.
-      </p>
+          <div className="card">
+            <h3>Secure Proctoring System</h3>
+            <p>Automated exam flows, focus detection & anti-cheating validation.</p>
+          </div>
 
-      <h3>🔹 Secure Proctoring Exam System (Education / E-Learning)</h3>
-      <p>
-        Web-based assessment platform with secure proctoring features including
-        browser lockdown, webcam monitoring, audio detection, and identity verification.
-        Performed automation testing for exam flow, focus detection, and anti-cheating mechanisms.
-      </p>
+          <div className="card">
+            <h3>Punjabi Samaj App</h3>
+            <p>Mobile automation testing using Python + Appium.</p>
+          </div>
 
-      <h3>🔹 Punjabi Samaj Mobile App</h3>
-      <p>
-        End-to-end mobile automation testing using Python + Appium for community platform.
-        Validated media uploads, event flows, directories, and navigation modules across Android devices.
-      </p>
+          <div className="card">
+            <h3>Sharp Quiz</h3>
+            <p>Selenium Java automation for quiz logic & scoring validation.</p>
+          </div>
 
-      <h3>🔹 Sharp Quiz (E-Learning)</h3>
-      <p>
-        Quiz application with multiple levels and scoring system.
-        Designed and executed automation regression tests using Selenium Java.
-        Validated quiz data accuracy and logged defects in Jira.
-      </p>
+          <div className="card">
+            <h3>Housie Mania</h3>
+            <p>Functional & regression testing for multiplayer game logic.</p>
+          </div>
 
-      <h3>🔹 Housie Mania (Gaming / Entertainment)</h3>
-      <p>
-        Gaming application where random numbers are generated and synced across players.
-        Performed functional, regression, and data validation testing to ensure accurate gameplay logic.
-      </p>
+          <div className="card">
+            <h3>E-Commerce Platform</h3>
+            <p>UI + DB validation & automation regression testing.</p>
+          </div>
 
-      <h3>🔹 E-Commerce Web Application</h3>
-      <p>
-        Tested order placement, cancellations, and delivery modifications across web and app.
-        Performed UI-DB validation and regression automation using Selenium.
-      </p>
+        </div>
+      </section>
 
-      <h3>🔹 Vehicle & Fleet Management System</h3>
-      <p>
-        Website for managing vehicle service records and trip logs.
-        Conducted manual + automated regression testing and validated data consistency.
-      </p>
-
-      <h3>🔹 We Build Trades (CRM Platform)</h3>
-      <p>
-        CRM system for managing sales, marketing, and operations.
-        Performed functional testing, test case execution, and defect tracking using Jira.
-      </p>
-
-      <hr style={{ margin: "40px 0" }} />
-
-      <h2>📫 +91 9981155633</h2>
-      <p>Email: shreyakashyap475@gmail.com</p>
-      <p>LinkedIn: https://www.linkedin.com/in/shreya-kashyap-681558248?utm_source=share_via&utm_content=profile&utm_medium=member_ios</p>
+      {/* CONTACT */}
+      <section className="contact">
+        <h2>📫 Contact Me</h2>
+        <p>📞 +91 9981155633</p>
+        <p>📧 shreyakashyap475@gmail.com</p>
+      </section>
     </div>
   );
 }
