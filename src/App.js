@@ -3,10 +3,15 @@ import "./App.css";
 function App() {
   return (
     <div className="container">
+      {/* 🐞 Flying Ladybugs */}
+      <div className="ladybug bug1">🐞</div>
+      <div className="ladybug bug2">🐞</div>
+      <div className="ladybug bug3">🐞</div>
+
       {/* HERO SECTION */}
       <section className="hero">
         <h1>Hi, I'm Shreya 👋</h1>
-        <h2>QA Automation Engineer</h2>
+        <h2 className="typing">QA Automation Engineer</h2>
         <p>QA + Automation + Manual + Data Validation</p>
 
         <div className="buttons">
@@ -41,6 +46,20 @@ function App() {
             • Good understanding of SDLC & STLC with strong analytical and problem-solving skills.<br/>
             • Focused on collaboration, timely delivery, and continuous QA improvement.
           </p>
+        </div>
+      </section>
+
+      {/* 🌍 DOMAIN BADGES */}
+      <section>
+        <h2>🌍 Domains Worked On</h2>
+        <div className="badges">
+          <span>Healthcare</span>
+          <span>E-Commerce</span>
+          <span>CRM</span>
+          <span>Gaming</span>
+          <span>Fleet Management</span>
+          <span>E-Learning</span>
+          <span>Community Apps</span>
         </div>
       </section>
 
