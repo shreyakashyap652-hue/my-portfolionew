@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
@@ -66,7 +66,7 @@ section {
   text-align: center;
   font-size: 18px;
 }
-=======
+
 .App {
   text-align: center;
 }
@@ -105,4 +105,3 @@ section {
     transform: rotate(360deg);
   }
 }
->>>>>>> 8c278e1a36320e4201b2be17159236a3dca92783
